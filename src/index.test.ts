@@ -1,5 +1,5 @@
-import { Greeter } from './index';
+import { autoNbsp } from './index';
 
-test('My Greeter', () => {
-  expect(Greeter('Carl')).toBe('Hello Carl');
+test('Simple auto nbsp test', () => {
+  expect(autoNbsp('What are they doing?')).toBe('What&nbsp;are they doing?');
 });
