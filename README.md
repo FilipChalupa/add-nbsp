@@ -1,3 +1,3 @@
 # Auto nbsp
 
-Insert auto &nbsp\; in the text.
+Вставляет автоматически &nbsp\; в текст.
