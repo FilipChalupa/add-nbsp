@@ -1,15 +1,13 @@
 type AutoNbspOptions = {
-    minCharInWord: number;
-}
+  minCharInWord: number;
+};
 
 export function autoNbsp(text: string, options?: AutoNbspOptions) {
-    const { minCharInWord = 3 } = options || {};
+  const { minCharInWord = 3 } = options || {};
 
-    return text.split(/[ ]/).reduce((acc, word) => {
-        if (acc === '') return word;
+  return text.split(/[ ]/).reduce((acc, word) => {
+    if (acc === '') return word;
 
-        return word.length <= minCharInWord
-            ? `${acc}&nbsp;${word}`
-            : `${acc} ${word}`;
-    }, '');
+    return word.length <= minCharInWord ? `${acc}&nbsp;${word}` : `${acc} ${word}`;
+  }, '');
 }
