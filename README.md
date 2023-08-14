@@ -11,7 +11,7 @@ npm install add-nbsp
 ## Usage
 
 ```js
-import { addNbsp } from 'add-nbsp';
+import { addNbsp } from 'add-nbsp'
 
-document.body.textContent = addNbsp('What are they doing?');
+document.body.textContent = addNbsp('What are they doing?')
 ```
