@@ -10,7 +10,10 @@ export function addNbsp(text: string, options?: AutoNbspOptions) {
 			return word
 		}
 
-		const space = word.length <= minimumCharacterCountInWord ? ' ' : ' '
+		const space =
+			word.replaceAll(/[\.,\?\!\:]/g, '').length <= minimumCharacterCountInWord
+				? ' '
+				: ' '
 
 		return `${accumulator}${space}${word}`
 	}, '')
