@@ -2,7 +2,7 @@ type AutoNbspOptions = {
 	minCharInWord: number;
 };
 
-export function autoNbsp(text: string, options?: AutoNbspOptions) {
+export function addNbsp(text: string, options?: AutoNbspOptions) {
 	const { minCharInWord = 3 } = options || {};
 
 	return text.split(/[ ]/).reduce((acc, word) => {

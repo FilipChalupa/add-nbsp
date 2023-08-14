@@ -1,11 +1,12 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./lib",
-    "strict": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*", "**/*.test.ts"]
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"declaration": true,
+		"outDir": "./lib",
+		"strict": true,
+		"types": ["node", "@types/jest"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "**/__tests__/*", "**/*.test.ts"]
 }

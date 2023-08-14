@@ -1,3 +1,7 @@
-# Auto nbsp
+# Add nbsp
 
-Insert auto &nbsp; in the text.
+```sh
+npm install add-nbsp
+```
+
+Add &nbsp; to text.

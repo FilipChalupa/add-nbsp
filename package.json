@@ -1,47 +1,48 @@
 {
-  "name": "auto-nbsp",
-  "version": "1.0.5",
-  "description": "The package allows you to automatically wrap conjunctions, prepositions and other words up to n characters on the next line. According to the rules of typography, n = 3.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/riledv/auto-nbsp.git"
-  },
-  "keywords": [
-    "nbsp",
-    "auto",
-    "text",
-    "typography",
-    "auto-nbsp"
-  ],
-  "author": "Artem Kamysh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/riledv/auto-nbsp/issues"
-  },
-  "homepage": "https://github.com/riledv/auto-nbsp#readme",
-  "devDependencies": {
-    "@types/jest": "^28.1.1",
-    "jest": "^28.1.1",
-    "prettier": "2.6.2",
-    "ts-jest": "^28.0.4",
-    "tslint": "6.1.3",
-    "tslint-config-prettier": "1.18.0",
-    "typescript": "4.7.3"
-  },
-  "files": [
-    "lib/**/*"
-  ]
+	"name": "add-nbsp",
+	"version": "0.0.0",
+	"description": "The package allows you to automatically wrap conjunctions, prepositions and other words up to n characters on the next line. According to the rules of typography, n = 3.",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest --config jestconfig.json",
+		"format": "prettier --write \"src/**/*.ts\"",
+		"lint": "tslint -p tsconfig.json",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm test && npm run lint",
+		"preversion": "npm run lint",
+		"version": "npm run format && git add -A src",
+		"postversion": "git push && git push --tags"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/FilipChalupa/add-nbsp.git"
+	},
+	"keywords": [
+		"nbsp",
+		"add",
+		"replace",
+		"auto",
+		"text",
+		"typography"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/FilipChalupa/add-nbsp/issues"
+	},
+	"homepage": "https://github.com/FilipChalupa/add-nbsp#readme",
+	"devDependencies": {
+		"@types/jest": "^28.1.8",
+		"@types/node": "^20.5.0",
+		"jest": "^28.1.1",
+		"prettier": "2.6.2",
+		"ts-jest": "^28.0.4",
+		"tslint": "6.1.3",
+		"tslint-config-prettier": "1.18.0",
+		"typescript": "4.7.3"
+	},
+	"files": [
+		"lib/**/*"
+	]
 }
