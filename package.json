@@ -1,6 +1,6 @@
 {
 	"name": "add-nbsp",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "The package allows you to automatically wrap conjunctions, prepositions and other words up to n characters on the next line. According to the rules of typography, n = 3.",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
