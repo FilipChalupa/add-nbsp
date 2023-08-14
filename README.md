@@ -4,4 +4,4 @@
 npm install add-nbsp
 ```
 
-Add &nbsp; to text.
+Add `&nbsp;` (non-breaking space) to text.
