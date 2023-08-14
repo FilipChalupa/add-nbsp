@@ -5,7 +5,7 @@ test('With no nbsp', () => {
 });
 
 test('With one nbsp', () => {
-	expect(addNbsp('What are they doing?')).toBe('What&nbsp;are they doing?');
+	expect(addNbsp('What are they doing?')).toBe('What are they doing?');
 });
 
 test('With no nbsp and custom options minCharInWord = 2', () => {
@@ -13,5 +13,5 @@ test('With no nbsp and custom options minCharInWord = 2', () => {
 });
 
 test('With two nbsp and custom options minCharInWord = 5', () => {
-	expect(addNbsp('What are they doing?', { minCharInWord: 5 })).toBe('What&nbsp;are&nbsp;they doing?');
+	expect(addNbsp('What are they doing?', { minCharInWord: 5 })).toBe('What are they doing?');
 });

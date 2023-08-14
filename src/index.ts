@@ -8,6 +8,6 @@ export function addNbsp(text: string, options?: AutoNbspOptions) {
 	return text.split(/[ ]/).reduce((acc, word) => {
 		if (acc === '') return word;
 
-		return word.length <= minCharInWord ? `${acc}&nbsp;${word}` : `${acc} ${word}`;
+		return word.length <= minCharInWord ? `${acc} ${word}` : `${acc} ${word}`;
 	}, '');
 }
